@@ -1,32 +1,201 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./header.css');
-@import url('./hero.css');
-@import url('./aboutus.css');
-@import url('./price.css');
-@import url('./ourproducts.css');
-@import url('./bestsellers.css');
-@import url('./reviews.css');
-@import url('./subscription.css');
-@import url('./footer.css');
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+.footer-container {
+  padding: 36px 16px 16px;
+}
+.footer {
+  background-color: var(--blue-font, #0a224a);
+  color: var(--white, #fff);
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+.footer-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.footer-navigation {
+  margin-bottom: 36px;
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 42px;
+  padding-top: 6px;
+}
+.footer-logo-icon {
+  fill: var(--white, #fff);
+}
+.footer-nav-item {
+  margin-bottom: 8px;
+}
+.footer-nav-item:last-child {
+  margin-bottom: 0;
+}
+.footer-nav-link {
+  color: var(--white, #fff);
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+.footer-address-item {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.01em;
+  font-style: normal;
+}
+.footer-address-link {
+  color: var(--white, #fff);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.01em;
+  font-style: normal;
+}
+.footer-address-mail {
+  display: none;
+}
+.footer-address-physical {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.footer-address-item:nth-child(1) {
+  margin-bottom: 36px;
+}
+.footer-address-item:nth-child(2) {
+  margin-bottom: 8px;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-socials-icon {
+  fill: var(--white, #fff);
+  padding: 0;
+}
+.footer-terms {
+  font-family: Roboto, sans-serif;
+  color: #d9d9d9;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.1em;
+}
+.footer-terms-link {
+  font-family: Roboto, sans-serif;
+  color: #d9d9d9;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.1em;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    padding: 36px 32px;
+    font-size: 19px;
+  }
+  .footer-wrapper {
+    margin-bottom: 110px;
+  }
+  .footer-contacts-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 249px;
+    position: relative;
+  }
+  .footer-logo {
+    width: 127px;
+    height: 16px;
+  }
+  .footer-navigation {
+    margin-bottom: 64px;
+  }
+  .footer-nav-item {
+    margin-bottom: 16px;
+  }
+  .footer-nav-link {
+    font-size: 18px;
+  }
+  .footer-address {
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+  .footer-address-physical {
+    margin-bottom: 24px;
+  }
+  .footer-address-item:nth-child(1) {
+    margin-bottom: 64px;
+  }
+  .footer-address-item:nth-child(2) {
+    margin-bottom: 24px;
+  }
+  .footer-inner {
+    margin-bottom: 24px;
+  }
+
+  .footer-address-mail {
+    display: inline-block;
+  }
+  .footer-social-list {
+    gap: 16px;
+  }
+  .footer-socials-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .footer-terms {
+    font-size: 16px;
+    line-height: 1.25px;
+    letter-spacing: 0.07em;
+  }
+  .footer-terms-link {
+    font-size: 16px;
+    line-height: 1.25px;
+    letter-spacing: 0.07em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1410px;
+  }
+  .footer-wrapper {
+    margin-bottom: 82px;
+  }
+  .footer-contacts-wrap {
+    gap: 216px;
+  }
+
+  .footer-logo {
+    padding-top: 12px;
+  }
+  .footer-nav-item {
+    margin-bottom: 0;
+  }
+  .footer-nav-link {
+    display: inline-block;
+    padding: 8px 0;
+  }
+  .footer-nav-list {
+    display: flex;
+    gap: 30px;
+  }
+  .footer-address {
+    top: 68px;
+  }
+  .footer-address-list {
+    display: flex;
+    gap: 88px;
+  }
+  .footer-address-item {
+    margin-bottom: 0;
+  }
+  .footer-inner:first-child {
+    margin-bottom: 24px;
+  }
 }
