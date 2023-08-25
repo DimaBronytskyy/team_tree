@@ -1,0 +1,110 @@
+.hero-container {
+    position: relative;
+    max-width: 375px;
+    width: 100%;
+    height: 717px;
+    background-image: url(../img/hero/hero-bg-mobile-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 140px 16px;
+    margin: 0 auto;
+}
+.hero-title {
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+.hero-subscribe {
+    position: absolute;
+    left: 16px;
+    bottom: 313px;
+}
+.hero-subscribe-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 28px;
+}
+.hero-subscribe-button {
+    display: inline-block;
+    min-width: 224px;
+    background-color: var(--blue);
+    font-size: 16px;
+    color: var(--white);
+    text-align: center;
+    line-height: 1.5;
+    padding: 12px 65px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-subscribe-button:hover, .hero-subscribe-button:focus {
+    background-color: #061835;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-container {
+        background-image: url(../img/hero/hero-bg-mobile-2x.jpg);
+    }
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding: 61px 0 266px;
+    }
+    .hero-container {
+        max-width: none;
+        width: 704px;
+        height: 530px;
+        background-image: url(../img/hero/hero-bg-chair-1x.jpg), url(../img/hero/hero-bg-table-tablet-1x.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: left bottom, right center;
+        background-size: auto, contain;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .hero-title {
+        font-size: 50px;
+    }
+    .hero-subscribe {
+        left: 0;
+        bottom: -166px;
+        width: 312px;
+    }
+    .hero-subscribe-text {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .hero-subscribe-button {
+        font-size: 18px;
+    }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .hero-container {
+            background-image: url(../img/hero/hero-bg-chair-2x.jpg), url(../img/hero/hero-bg-table-tablet-2x.jpg);
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero {
+        padding: 61px 0 100px;
+    }
+    .hero-container {
+        width: 1320px;
+        background-image: url(../img/hero/hero-bg-chair-1x.jpg), url(../img/hero/hero-bg-table-desktop-1x.jpg), url(../img/hero/hero-bg-shelf-1x.jpg);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: left bottom, 335px center, right top;
+        background-size: auto, contain, auto;
+    }
+    .hero-subscribe {
+        left: unset;
+        right: 0;
+        bottom: 0;
+    }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .hero-container {
+            background-image: url(../img/hero/hero-bg-chair-2x.jpg), url(../img/hero/hero-bg-table-desktop-2x.jpg), url(../img/hero/hero-bg-shelf-2x.jpg);
+        }
+    }
+}
