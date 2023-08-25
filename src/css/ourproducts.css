@@ -1,0 +1,110 @@
+.ourproducts-main {
+  width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 64px;
+  /* padding-bottom: 64px; */
+  margin: auto;
+}
+
+.ourproducts-title {
+  color: var(--blue-font, #0a224a);
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4; /* 140.625% */
+  text-transform: uppercase;
+}
+
+.ourpoducts-text {
+  margin-top: 15px;
+  color: var(--blue-font, #0a224a);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+}
+.ourproducts-title {
+  text-align: center;
+}
+.ourpoducts-list {
+  padding-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .ourproducts-main {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 64px;
+    /* padding-bottom: 64px; */
+  }
+
+  .ourpoducts-list {
+    display: flex;
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .ourproducts-main {
+    width: 1440px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: auto;
+    padding-top: 64px;
+    /* padding-bottom: 64px; */
+  }
+
+  .ourpoducts-list {
+    display: flex;
+    gap: 24px;
+    padding-top: 30px;
+  }
+
+  .ourpoducts-text {
+    margin-top: 15px;
+  }
+  .ourproducts-title {
+    text-align: center;
+  }
+}
+
+.table {
+  display: none;
+}
+.chair {
+  display: none;
+}
+.sofa {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .sofa {
+    display: block;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .table {
+    display: block;
+  }
+  .chair {
+    display: block;
+  }
+}
+
+/* .ourpoducts-list {
+}
+.ourpoducts-item {
+}
+.flower {
+}
+.ourproducts-picture {
+}
+.ourpoducts-text {
+}
+.sofa {
+} */

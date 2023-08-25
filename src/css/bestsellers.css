@@ -1,0 +1,195 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .bestsellers-main {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin: auto;
+    width: 375px;
+  }
+
+  .bestsellers-title {
+    color: var(--blue-font, #0a224a);
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 21px;
+  }
+
+  .bestsellers-1-text {
+    color: var(--blue-font, #0a224a);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    margin-top: 14px;
+    margin-bottom: 10px;
+  }
+
+  .bestsellers-1-prices {
+    color: var(--blue-font, #0a224a);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5; /* 150% */
+  }
+
+  .bestsellers-text {
+    color: var(--blue-font, #0a224a);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    margin-top: 14px;
+    margin-bottom: 10px;
+  }
+
+  .bestsellers-prices {
+    color: var(--blue-font, #0a224a);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5; /* 150% */
+  }
+  .bestsellers-2,
+  .bestsellers-3 {
+    margin-top: 30px;
+  }
+
+  .bestsellers-4,
+  .bestsellers-5 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bestsellers-4,
+  .bestsellers-5 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .bestsellers-main {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: auto;
+    width: 768px;
+  }
+
+  .bestsellers-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 32px 32px;
+    margin-top: 32px;
+  }
+  .best-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .bestsellers-title {
+    color: var(--blue-font, #0a224a);
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.41; /* 140.625% */
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .bestsellers-1-text,
+  .bestsellers-text {
+    color: var(--blue-font, #0a224a);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .bestsellers-1-prices,
+  .bestsellers-prices {
+    color: var(--blue-font, #0a224a);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5; /* 150% */
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .bestsellers-main {
+    padding-left: 172px;
+    padding-right: 172px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: auto;
+    width: 1440px;
+  }
+  .bestsellers-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% - 20px) / 2);
+    margin-left: 24px;
+    gap: 30px 20px;
+  }
+  .best-box {
+    display: flex;
+  }
+
+  .bestsellers-title {
+    color: var(--blue-font, #0a224a);
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.41; /* 140.625% */
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .bestsellers-1-text,
+  .bestsellers-text {
+    color: var(--blue-font, #0a224a);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .bestsellers-1-prices,
+  .bestsellers-prices {
+    color: var(--blue-font, #0a224a);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5; /* 150% */
+    height: 21px;
+  }
+
+  .best-1-img {
+    width: 536px;
+    height: 489px;
+  }
+}
