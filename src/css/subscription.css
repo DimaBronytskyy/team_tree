@@ -46,11 +46,11 @@
   flex-direction: column;
   border: none;
 }
-.label-container {
+.sub-label-container {
   margin-bottom: 20px;
 }
 
-.form-label {
+.sub-form-label {
   display: block;
   flex-direction: column;
   color: #d9d9d9;
@@ -61,7 +61,7 @@
   letter-spacing: 0.04em;
   border-color: #b6b6b6;
 }
-.form-contact {
+.sub-form-contact {
   display: flex;
   padding: 11px 20px;
   width: 343px;
@@ -78,13 +78,13 @@
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-contact::placeholder {
+.sub-form-contact::placeholder {
   color: #d9d9d9;
 }
-.form-contact:focus {
+.sub-form-contact:focus {
   border-color: #0a224a;
 }
-.visually-hidden {
+.sub-visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -97,11 +97,11 @@
   overflow: hidden;
 }
 
-.checkbox-container {
+.sub-checkbox-container {
   display: inline-flex;
   margin-bottom: 30px;
 }
-.form-label-checkbox {
+.sub-form-label-checkbox {
   color: #7a7a7a;
   font-family: Roboto;
   font-size: 16px;
@@ -110,14 +110,13 @@
   line-height: 1.5;
 }
 
-.agree-click {
+.sub-agree-click {
   display: block;
-  /* padding: 8px 16px; */
   width: 321px;
   min-height: 26px;
   flex-shrink: 0;
 }
-.checkbox {
+.sub-checkbox {
   display: inline-flex;
   width: 25px;
   height: 25px;
@@ -133,7 +132,7 @@
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.agree-click:checked + .form-label-checkbox .checkbox {
+.sub-agree-click:checked + .sub-form-label-checkbox .sub-checkbox {
   background-color: #0a224a;
   border: none;
   stroke: #ffffff;
@@ -186,7 +185,7 @@
     font-size: 18px;
     margin-bottom: 20px;
   }
-  .form-contact {
+  .sub-form-contact {
     width: 536px;
   }
   .sub-btn {
