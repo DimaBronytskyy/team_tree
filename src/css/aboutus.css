@@ -1,0 +1,148 @@
+.about_us-container {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about_us {
+  background: var(--white);
+}
+.about_us-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.about_us-right {
+  background: var(--lightblue);
+  padding: 64px 16px;
+  width: 100%;
+}
+.about_us-left {
+  width: 100%;
+}
+
+.about_us-title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 50px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.about_us-title::before {
+  content: '';
+  width: 30px;
+  height: 1px;
+  background-color: var(--blue);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about_us-subtitle {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.about_us-description {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.about_us-advantages-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.about_us-advantages-item {
+  width: 170px;
+}
+
+.about_us-item-title {
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.about_us-item-descrip {
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 375px) {
+  .about_us-container {
+    max-width: 375px;
+  }
+  .about_us-subtitle {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about_us-container {
+    max-width: 768px;
+    padding: 100px 32px 0 32px;
+  }
+  .about_us-wrap {
+    gap: 30px;
+  }
+  .about_us-right {
+    padding: 36px 64px;
+  }
+  .about_us-subtitle {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  .about_us-description {
+    font-size: 18px;
+  }
+  .about_us-item-descrip {
+    font-size: 18px;
+  }
+  .about_us-advantages-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about_us-container {
+    max-width: 1440px;
+    padding: 100px 60px 0 60px;
+  }
+  .about_us-wrap {
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .about_us-right {
+    padding: 36px 69px;
+    max-width: 760px;
+  }
+
+  .about_us-left {
+    max-width: 536px;
+  }
+}
