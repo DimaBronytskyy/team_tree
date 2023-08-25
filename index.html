@@ -19,8 +19,8 @@
     />
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/team_tree/assets/index-889d5af8.js"></script>
-    <link rel="stylesheet" href="/team_tree/assets/index-16fcd756.css">
+    <script type="module" crossorigin src="/team_tree/assets/index-b254ecc4.js"></script>
+    <link rel="stylesheet" href="/team_tree/assets/index-5f97c7ad.css">
   </head>
   <body>
     
@@ -65,15 +65,95 @@
     
     
     
-    
-  <!-- <img src="/img/subscription/subscription_desktop.png" alt="product" /> -->
+    <section class="subscription-section">
+  <div class="sub-container">
+    <div class="sub-container-form">
+      <h2 class="sub-header-second">Newsletter</h2>
+
+      <p class="sub-title">
+        Every week we will send you new designs and information about sales.
+      </p>
+
+      <form class="sub-form" name="Subscription contacts">
+        <div class="sub-label-container">
+          <label class="sub-form-label" for="user-name"></label>
+          <input
+            class="sub-form-contact"
+            type="text"
+            name="user-name"
+            placeholder="Name"
+            minlength="2"
+            maxlength="16"
+            autofocus
+            id="user-name"
+          />
+        </div>
+
+        <div class="sub-label-container">
+          <label class="form-label" for="email-modal"> </label>
+
+          <input
+            class="sub-form-contact"
+            type="email"
+            name="email-modal"
+            placeholder="Email"
+            id="email-modal"
+          />
+        </div>
+
+        <div class="sub-checkbox-container">
+          <input
+            class="sub-agree-click sub-visually-hidden"
+            type="checkbox"
+            name="user-newsletter"
+            value="true"
+            id="user-newsletter"
+          />
+          <label class="sub-form-label-checkbox" for="user-newsletter">
+            <span class="sub-checkbox">
+              <svg class="sub-icons" width="13" height="13">
+                <use href="/team_tree/assets/svg-sprite-26f479bc.svg#icon-form-check"></use>
+              </svg>
+            </span>
+            Agree to subscribe to the newsletter
+          </label>
+        </div>
+
+        <button class="sub-btn" type="submit">Send</button>
+      </form>
+    </div>
+
+    <picture>
+      <source
+        srcset="/team_tree/assets/subscription_desktop-4b6b5d29.jpg 1x, /team_tree/assets/subscription_desktop@2x-b30088d3.jpg 2x"
+        media="(min-width:1440px)"
+      />
+
+      <source
+        srcset="/team_tree/assets/subscription_tab-37d5c199.jpg 1x, /team_tree/assets/subscription_tab@2x-54b4c41e.jpg 2x"
+        media="(min-width:768px)"
+      />
+
+      <source
+        srcset="/team_tree/assets/subscription_mob-f6e98e6e.jpg 1x, /team_tree/assets/subscription_mob@2x-bb8f66c4.jpg 2x"
+        media="(min-width:320px)"
+      />
+
+      <img
+        src="../img/subscription/subscription_desktop.jpg"
+        alt="product shot sofa"
+        width="704"
+      />
+    </picture>
+  </div>
+</section>
     <footer class="footer">
   <div class="footer-container">
     <div class="footer-wrapper">
       <div class="footer-contacts-wrap">
         <a href="./index.html" class="footer-logo">
           <svg class="footer-logo-icon" width="100" height="16">
-            <use href="/team_tree/assets/svg-sprite-af055021.svg#icon-logo"></use>
+            <use href="/team_tree/assets/svg-sprite-26f479bc.svg#icon-logo"></use>
           </svg>
         </a>
         <nav class="footer-navigation">
@@ -145,7 +225,7 @@
             rel="nofollow"
           >
             <svg class="footer-socials-icon" width="28" height="28">
-              <use href="/team_tree/assets/svg-sprite-af055021.svg#icon-facebook"></use>
+              <use href="/team_tree/assets/svg-sprite-26f479bc.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
@@ -157,7 +237,7 @@
             rel="nofollow"
           >
             <svg class="footer-socials-icon" width="28" height="28">
-              <use href="/team_tree/assets/svg-sprite-af055021.svg#icon-instagram"></use>
+              <use href="/team_tree/assets/svg-sprite-26f479bc.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -169,7 +249,7 @@
             rel="nofollow"
           >
             <svg class="footer-socials-icon" width="28" height="28">
-              <use href="/team_tree/assets/svg-sprite-af055021.svg#icon-youtube"></use>
+              <use href="/team_tree/assets/svg-sprite-26f479bc.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
