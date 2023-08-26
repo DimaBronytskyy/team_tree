@@ -139,10 +139,9 @@
 
   .about_us-right {
     padding: 36px 69px;
-    max-width: 760px;
   }
 
   .about_us-left {
-    max-width: 536px;
+    flex: 0 0 536px;
   }
 }
