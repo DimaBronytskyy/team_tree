@@ -10,28 +10,39 @@
       <form class="sub-form" name="Subscription contacts">
         <div class="sub-label-container">
           <label class="sub-form-label" for="user-name"></label>
-          <input
-            class="sub-form-contact"
-            type="text"
-            name="user-name"
-            placeholder="Name"
-            minlength="2"
-            maxlength="16"
-            autofocus
-            id="user-name"
-          />
+          <div class="sub-contact-input">
+            <input
+              class="sub-form-contact"
+              type="text"
+              name="user-name"
+              placeholder="Name"
+              minlength="2"
+              maxlength="16"
+              id="user-name"
+              required
+            />
+            <svg class="error-icon" width="24" height="24">
+              <use href="../img/footer/svg-sprite.svg#icon-error"></use>
+            </svg>
+          </div>
         </div>
 
         <div class="sub-label-container">
           <label class="form-label" for="email-modal"> </label>
 
-          <input
-            class="sub-form-contact"
-            type="email"
-            name="email-modal"
-            placeholder="Email"
-            id="email-modal"
-          />
+          <div class="sub-contact-input">
+            <input
+              class="sub-form-contact"
+              type="email"
+              name="email-modal"
+              placeholder="Email"
+              id="email-modal"
+              required
+            />
+            <svg class="error-icon" width="24" height="24">
+              <use href="../img/footer/svg-sprite.svg#icon-error"></use>
+            </svg>
+          </div>
         </div>
 
         <div class="sub-checkbox-container">
