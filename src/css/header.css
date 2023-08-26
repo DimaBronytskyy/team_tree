@@ -1,157 +1,148 @@
 .is-hidden {
-    transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
-
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 16px;
-    padding-right: 16px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .header {
-    background-color: #F7FAFF;
+  background-color: #f7faff;
 }
 
 .header-logo-link {
-    padding: 34px 0;
-    display: inline-block;
+  padding: 34px 0;
+  display: inline-block;
 }
 
 .header-logo {
-    fill: #0A224A;
+  fill: #0a224a;
 }
 
 .header-list {
-    display: none;
+  display: none;
 }
 
 .header-button-mob {
-    display: block;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-
+  display: block;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .header-button-icon:hover,
 .header-button-icon:focus {
-    stroke: #061835;
+  stroke: #061835;
 }
 
 .header-button-icon {
-    stroke: #0A224A;
+  stroke: #0a224a;
 }
 
 .mob-menu {
-    position: fixed;
-    top: 0;
-    z-index: 20;
-    width: 100vw;
-    height: 100vh;
-    background: var(--white, #FFF);
-    overflow: auto;
-    transition-property: all;
-    transition-duration: 500ms;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  width: 100vw;
+  height: 100vh;
+  background: var(--white, #fff);
+  overflow: auto;
+  transition: transform 250ms ease-in-out;
 }
 
-
-
 .mob-container {
-    background-color: #F7FAFF;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 122px;
-    padding-left: 16px;
-    padding-right: 16px;
-
+  background-color: #f7faff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 122px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.lock-scroll {
+  overflow: hidden;
 }
 
 .header-button-close {
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 }
-
-
 
 .header-close-icon:hover,
 .header-close-icon:focus {
-    stroke: #061835;
+  stroke: #061835;
 }
 
 .header-close-icon {
-    stroke: #0A224A;
+  stroke: #0a224a;
 }
 
 .header-mob-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
 }
 
 .header-mob-link {
-    color: #0A224A;
-    font-size: 16px;
-    line-height: 1.5;
-    cursor: pointer;
+  color: #0a224a;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
 }
-
 
 @media screen and (min-width: 375px) {
-    .header-container {
-        max-width: 768px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+  .header-container {
+    max-width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
-
 @media screen and (min-width: 768px) {
-    .header-container {
-        padding-left: 32px;
-        padding-right: 32px;
-        max-width: 1440px;
-    }
+  .header-container {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 1440px;
+  }
 
-    .mob-container {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
+  .mob-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .header-container {
-        padding-left: 60px;
-        padding-right: 60px;
-        max-width: 1440px;
-    }
+  .header-container {
+    padding-left: 60px;
+    padding-right: 60px;
+    max-width: 1440px;
+  }
 
+  .header-list {
+    display: flex;
+    gap: 30px;
+  }
 
-    .header-list {
-        display: flex;
-        gap: 30px;
-    }
+  .header-link {
+    color: #0a224a;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 1.5;
+  }
 
-    .header-link {
-        color: #0A224A;
-        font-family: Roboto;
-        font-size: 18px;
-        line-height: 1.5;
-    }
+  .header-button-mob {
+    display: none;
+  }
 
-    .header-button-mob {
-        display: none;
-    }
-
-    .mob-menu {
-        display: none;
-    }
+  .mob-menu {
+    display: none;
+  }
 }
