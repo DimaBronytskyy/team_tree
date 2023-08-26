@@ -81,6 +81,7 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .hero-container {
             background-image: url(../img/hero/hero-bg-chair-2x.jpg), url(../img/hero/hero-bg-table-tablet-2x.jpg);
+            background-size: 308px auto, contain;
         }
     }
 }
@@ -105,6 +106,7 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .hero-container {
             background-image: url(../img/hero/hero-bg-chair-2x.jpg), url(../img/hero/hero-bg-table-desktop-2x.jpg), url(../img/hero/hero-bg-shelf-2x.jpg);
+            background-size: 308px auto, contain, 312px auto;
         }
     }
 }
