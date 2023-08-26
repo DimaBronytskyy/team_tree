@@ -20,6 +20,15 @@
   border-right-color: white;
   max-width: 1096px;
   height: 105px;
+  position: relative;
+}
+.price-li:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  top: 50%;
+  background-color: var(--blue);
 }
 .price-li-li {
   border-bottom: 1px solid;
@@ -31,19 +40,18 @@
 .li-name-p {
   font-size: 32px;
   line-height: 1.40625em;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(0px);
 }
 .li-name-m {
   font-size: 18px;
   font-weight: 1000;
 }
-.ul-li-name:hover {
+.price-li:hover .li-name-p{
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateX(80px);
 }
-.ul-li-name {
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateX(0px);
-}
+
 .a-price {
     height: 105px;
 }
