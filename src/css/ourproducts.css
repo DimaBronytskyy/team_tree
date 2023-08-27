@@ -1,5 +1,5 @@
 .ourproducts-main {
-  width: 375px;
+  min-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 64px;
