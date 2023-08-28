@@ -5,7 +5,7 @@
     padding-top: 64px;
     padding-bottom: 64px;
     margin: auto;
-    width: 375px;
+    min-width: 320px;
   }
   .bestsellers-title {
     color: var(--blue-font, #0a224a);
