@@ -32,7 +32,12 @@
 .ourpoducts-list {
   margin-top: 30px;
 }
-
+@media screen and (max-width: 768px) {
+  .ourpoducts-list {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .ourproducts-main {
     width: 768px;
