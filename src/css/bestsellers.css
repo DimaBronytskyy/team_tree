@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .bestsellers-main {
     padding-left: 16px;
     padding-right: 16px;
@@ -63,6 +63,10 @@
   .bestsellers-4,
   .bestsellers-5 {
     display: none;
+  }
+  .best-box {
+    max-width: 343px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
